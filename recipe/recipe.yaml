@@ -2,15 +2,15 @@ schema_version: 1
 
 context:
   name: azure-mgmt-cognitiveservices
-  version: 13.6.0
+  version: 13.5.0
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure_mgmt_cognitiveservices-${{ version }}.tar.gz
-  sha256: 612e56f79e824f81d590cff0c09253358ada065d5a6169c13905fc35064d9b40
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure-mgmt-cognitiveservices-${{ version }}.zip
+  sha256: 44af0b19b1f827e9cdea09c6054c1e66092a51c32bc1ef5a56dbd9b40bc57815
 
 build:
   number: 0
@@ -24,10 +24,9 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - isodate >=0.6.1
-    - typing_extensions >=4.6.0
-    - azure-common >=1.1
-    - azure-mgmt-core >=1.3.2
+    - azure-common >=1.1,<2.0
+    - azure-mgmt-core >=1.3.2,<2.0
+    - isodate 0.6.1,<1.0
 
 tests:
   - python:
