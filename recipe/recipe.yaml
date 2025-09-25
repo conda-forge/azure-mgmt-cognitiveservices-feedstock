@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: azure-mgmt-cognitiveservices
-  version: "13.7.0"
+  version: "14.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure_mgmt_cognitiveservices-${{ version }}.tar.gz
-  sha256: 48a5a44c15c6768bad238011aaac83a806ceb8ace1b51b8043e35b39a9167a19
+  sha256: 6243156bc1639aa82ab4a5ba4d2f1c084d0e4d30ffa108f7103c8ac191e82ba3
 
 build:
   number: 0
